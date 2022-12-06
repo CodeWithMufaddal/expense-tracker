@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: http://localhost:3000/sitemap.xml 
