@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   width: 100vw;
   height: 100vh;
+  background-color: #f3f4f6;
+  color: #9e9ea7;
 }
 
 code {
@@ -26,7 +28,13 @@ code {
   transition: 0.2s;
 }
 
-button{
+button {
   background: transparent;
   border: 0;
+}
+
+.page-center {
+  width: 100%;
+  max-width: 786px;
+  margin: auto;
 }

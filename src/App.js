@@ -3,19 +3,26 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import AddExpense from './Components/AddExpense'
 import Home from './Components/Home'
 import Navbar from './Components/Navbar'
+import './App.css'
+import ProtectedRoute from './Components/Auth/ProtectedRoute'
+import Login from './Components/Auth/Login'
+import SignUp from './Components/Auth/SignUp'
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className='page-center'>
         <Routes>
           <Route path="/" element={<>
-            <Navbar />
-            <Home />
+            <ProtectedRoute>
+              <Navbar />
+              <Home />
+            </ProtectedRoute>
           </>} />
           <Route path="/add" element={<AddExpense />} />
+          <Route path="/accounts/login" element={<Login />} />
+          <Route path="/accounts/signup" element={<SignUp />} />
         </Routes>
-
       </div>
     </Router>
   )
