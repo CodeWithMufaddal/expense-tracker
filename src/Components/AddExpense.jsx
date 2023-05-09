@@ -2,7 +2,16 @@ import React from 'react'
 
 const AddExpense = () => {
   return (
-    <div>AddExpense</div>
+    <div>
+      how Lest start
+      <form action="">
+        <div className="">
+          <label htmlFor="amount">amount</label>
+          <input className="style-input" type='text' aria-label="amount"/>
+        </div>
+
+      </form>
+    </div>
   )
 }
 

@@ -8,7 +8,6 @@ const Home = () => {
         <div className='page-center'>
             <div className="home">
                 <div className="">
-
                     Home
                 </div>
                 <div className="">
